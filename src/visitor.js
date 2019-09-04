@@ -10,7 +10,6 @@ module.exports = class Visitor {
         this.comments = comments;
         this.name_of_person_who_assisted_the_visitor = name_of_person_who_assisted_the_visitor;
         this.visitor_count = count;
-        count++;
     }
 
     save() {
