@@ -1,7 +1,6 @@
 {
   "name": "node.jsproject",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jasmine"
@@ -18,5 +17,7 @@
   "homepage": "https://github.com/Zowiezo/node.jsProject#readme",
   "dependencies": {
     "jasmine": "^3.4.0"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }

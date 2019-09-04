@@ -1,18 +1,18 @@
 var Visitor = require('../src/visitor');
 
-describe('it must save the visitors', () => {
+describe('save', () => {
     var visitor;
-    beforeEach(function() {
+    beforeEach(() => {
         visitor = new Visitor('Lee', 25, 25 - 05 - 2019, "13h30", 'quite', 'Stacy');
     });
     it('should save the visitors info to json', () => {
-        expect(visitor.save()).toBe('data is saved')
+        expect(visitor.save()).toBe('data is saved');
     });
 });
 
-describe('it must load the visitors info', () => {
+describe('load', () => {
     var visitor;
-    beforeEach(function() {
+    beforeEach(() => {
         visitor = new Visitor('Lee', 25, 25 - 05 - 2019, "13h30", 'quite', 'Stacy');
     });
     it('should load the visitors info', () => {
