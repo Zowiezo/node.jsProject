@@ -11,12 +11,10 @@ module.exports = class Visitor {
         this.name_of_person_who_assisted_the_visitor = name_of_person_who_assisted_the_visitor;
         this.visitor_count = count;
     }
-
     save() {
         fs.writeFileSync('visitor_' + this.visitor_count + '.json ', JSON.stringify(this));
         return "data is saved";
     }
-
     load() {
         let data = JSON.stringify(this);
         fs.readFileSync('visitor_' + this.visitor_count + '.json ');
